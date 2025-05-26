@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+
+	{% include "head.njk" %}
+
+	<body>
+		{% include "banner.njk" %}
+		<main>
+			{{ content | safe }}
+		</main>
+		{% include "contentinfo.njk" %}
+	</body>
+
+</html>

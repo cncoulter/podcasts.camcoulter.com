@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/*
+	# Fonts
+	=======
+*/
+
+html {
+	font-family: mono;
+}
+
+/*
+	# Variables (CSS Custom Properties)
+	===================================
+*/
+
+
+
+/*
+	# Basic Styles
+	==============
+*/
+
+:root {
+	color-scheme: dark;
+}
+
+/*
+	# Specific, Recurring Components
+	================================
+*/
+
+
+[aria-current="page"] {
+	font-weight: bold;
+}
+
+/*
+	## Skip to Main Content link
+	----------------------------
+*/
+
+
+
+/*
+	# Page-Specific Styles
+	======================
+*/
+
+
+
+/*
+	## Index
+	--------
+*/
+
+
+
+/*
+	# Print Styles
+	==============
+*/
+
+@media screen {
+  .printOnly {
+    display: none;
+  }
+}

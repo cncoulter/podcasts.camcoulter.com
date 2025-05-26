@@ -1,0 +1,12 @@
+<header class="banner">
+	<a href="#main-content" class="skip-nav">Skip to Main Content</a>
+	<h2>{{ meta.siteName }}</h2>
+	<p class="printOnly">This page appears online at: <a href="{{ page.url }}" class="doNotPrintLink">{{ meta.url }}{{ page.url }}</a></p>
+	<nav>
+		<ul>
+			<li><a href="/" {% if page.url === '/' %}aria-current="page"{% endif %}>Home</a></li>
+			<li><a href="/about/" {% if page.url === '/about/' %}aria-current="page"{% endif %}>About</a></li>
+			<li><a href="/blog/archive" {% if page.url === '/blog/archive/' %}aria-current="page"{% endif %}>Blog Archive</a></li>
+		</ul>
+	</nav>
+</header>
