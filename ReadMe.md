@@ -4,7 +4,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 
 ## To Do
 
-* Make "Skip to Main Content" link visually hidden
+* ~~Make "Skip to Main Content" link visually hidden~~
 * Build out the blog
     * ~~Add posted dates and updated dates~~
     * Add tags (including tag index)

@@ -40,7 +40,22 @@ html {
 	----------------------------
 */
 
+a[href="#main-content"] {
+	position: absolute;
+	top: -1000px;
+	margin: 0;
+	padding: 1.5em;
+	border: 1px solid;
+	background: black;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
 
+a[href="#main-content"]:focus {
+	display: block;
+	top: 0;
+}
 
 /*
 	# Page-Specific Styles
