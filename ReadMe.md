@@ -4,6 +4,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 
 ## To Do
 
+* ~~Add license~~
 * ~~Make "Skip to Main Content" link visually hidden~~
 * Build out the blog
     * ~~Add posted dates and updated dates~~
@@ -15,3 +16,12 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * Add XML sitemap for robots
 * Add basic CSS styles
 * Add photos
+
+## About This Site
+
+[Dozen](https://dozen.camcoulter.com/) is:
+
+* Powered by [Eleventy](https://www.11ty.dev/)
+* Hosted with [Netlify](https://www.netlify.com/)
+* Released under the MIT License
+* In development and incomplete
