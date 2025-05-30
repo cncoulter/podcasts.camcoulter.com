@@ -12,6 +12,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
     * Add categories (including category index)
     * Add authors (including authors index and author pages)
     * Add Atom feed for blog
+* Add 404
 * Add HTML sitemap for humans
 * Add XML sitemap for robots
 * Add basic CSS styles
@@ -23,5 +24,5 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 
 * Powered by [Eleventy](https://www.11ty.dev/)
 * Hosted with [Netlify](https://www.netlify.com/)
-* Released under the MIT License
+* Released under the [MIT License](https://choosealicense.com/licenses/mit/)
 * In development and incomplete
