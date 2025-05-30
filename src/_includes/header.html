@@ -1,0 +1,12 @@
+<header class="banner">
+	<a href="#main-content">Skip to Main Content</a>
+	<h2>{{ meta.siteName }}</h2>
+	<p class="printOnly">This page appears online at: <a href="{{ page.url }}" class="doNotPrintLink">{{ meta.url }}{{ page.url }}</a></p>
+	<nav>
+		<ul>
+			{% for link in navigation.headerLinks %}
+				<li><a href="{{ link.url }}" {% if link.url === page.url %}aria-current="page"{% endif %}>{{ link.label }}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

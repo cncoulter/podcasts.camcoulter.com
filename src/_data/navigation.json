@@ -1,0 +1,16 @@
+{
+    "headerLinks": [
+        {
+            "label": "Home",
+            "url": "/"
+        },
+        {
+            "label": "About",
+            "url": "/about/"
+        },
+        {
+            "label": "Blog Archive",
+            "url": "/blog/archive/"
+        }
+    ]
+}
