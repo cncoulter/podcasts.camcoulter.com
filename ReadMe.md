@@ -12,7 +12,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
     * Add categories (including category index)
     * Add authors (including authors index and author pages)
     * Add Atom feed for blog
-* Add 404
+* ~~Add 404~~
 * Add HTML sitemap for humans
 * Add XML sitemap for robots
 * Add basic CSS styles
