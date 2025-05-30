@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon"); // Luxon is a JavaScript library for working with dates and times: https://moment.github.io/luxon/
 
 module.exports = function (eleventyConfig) {
-	
+	// Copy through these files from src/ to public/ without modifying them.
 	eleventyConfig.addPassthroughCopy("./src/css/");
 	eleventyConfig.addPassthroughCopy("./src/*.txt");
 	
