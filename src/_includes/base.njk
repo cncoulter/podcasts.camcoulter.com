@@ -7,11 +7,11 @@
 	{% include "head.njk" %}
 
 	<body>
-		{% include "header.html" %}
+		{% include "header.njk" %}
 		<main>
 			{{ content | safe }}
 		</main>
-		{% include "contentinfo.njk" %}
+		{% include "footer.njk" %}
 	</body>
 
 </html>
