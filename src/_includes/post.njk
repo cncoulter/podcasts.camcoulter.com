@@ -9,6 +9,7 @@ layout: base.njk
 <ul class="post-metadata">
 	{% if date %}<li>Posted on: <time datetime="{{ date | machineReadable }}">{{ date | humanReadable }}</time></li>{% endif %}
 	{% if date_modified %}<li>Updated on: <time datetime="{{ date_modified | machineReadable }}">{{ date_modified | humanReadable }}</time></li>{% endif %}
+	{% if tags %}<li>Tagged with: {% for item in tags | sort %}{{ item }}{% if not loop.last %}, {% endif %}{% endfor %}</li>{% endif %}
 	{% if categorizedUnder %}<li>Categorized under: {% for item in categorizedUnder | sort %}{{ item }}{% if not loop.last %}, {% endif %}{% endfor %}</li>{% endif %}
 </ul>
 

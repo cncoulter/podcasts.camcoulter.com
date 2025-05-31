@@ -3,6 +3,8 @@ title: My first post
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 date: 2013-04-03T07:42:00-07:00 # PST is -08:00, PDT is -07:00
 date_modified: 2025-05-23T01:01:00-07:00 # PST is -08:00, PDT is -07:00
+tags:
+- unicorn
 categorizedUnder:
 - web design
 - accessibility
