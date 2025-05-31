@@ -10,7 +10,7 @@ title: Blog Archive
 	<ul class="post-metadata">
 		{% if post.data.date %}<li>Posted on: <time datetime="{{ post.data.date | machineReadable }}">{{ post.data.date | humanReadable }}</time></li>{% endif %}
 		{% if post.data.date_modified %}<li>Updated on: <time datetime="{{ post.data.date_modified | machineReadable }}">{{ post.data.date_modified | humanReadable }}</time></li>{% endif %}
-		<li>Catagorized under TK.</li>
+		{% if post.data.categorizedUnder %}<li>Catagorized under: {% for item in post.data.categorizedUnder | sort %}{{ item }}{% if not loop.last %}, {% endif %}{% endfor %}</li>{% endif %}
 	</ul>
 
     <hr>
