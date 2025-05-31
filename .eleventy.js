@@ -20,6 +20,12 @@ module.exports = function (eleventyConfig) {
 	// Sets up {% year %}, which returns the current year
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+	// COLLECTIONS
+	// Creates the collection categorizedPages, which includes every page that has categorizedUnder in its frontmatter.
+	eleventyConfig.addCollection("categorizedPages", function (collection) {
+		return collection.getAll().filter((item) => item.data.categorizedUnder);
+	});
+
 	return {
 		markdownTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',
