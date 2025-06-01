@@ -40,6 +40,19 @@ module.exports = function (eleventyConfig) {
 		// To integrate capitals and lowercase, add (a, b) => a.localeCompare(b) within sort()
 	});
 
+	eleventyConfig.addFilter("categorizedUnder", function(categorizedPages, category) {
+		// Given collections.categorizedPages & a category
+		// This filter will return an array of all pages that are categorizedUnder that category.
+		// Example usage: {% for item in collections.categorizedPages | categorizedUnder("web design") %}
+		const relevantPages = [];
+		categorizedPages.forEach((page) => {
+			if ([...page.data.categorizedUnder].includes(category)) {
+				relevantPages.push(page);
+			}
+		});
+		return relevantPages;
+	});
+
 	return {
 		markdownTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',
