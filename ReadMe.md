@@ -10,7 +10,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * Build out the blog
     * ~~Add posted dates and updated dates~~
     * ~~Add categories (including category index)~~
-    * Add tags (including tag index)
+    * ~~Add tags (including tag index)~~
     * Paginate (optionally) blog archive
     * Paginate (optionally) categories
     * Paginate (optionally) tags

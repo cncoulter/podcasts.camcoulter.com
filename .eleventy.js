@@ -25,6 +25,9 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("categorizedPages", function (collection) {
 		return collection.getAll().filter((item) => item.data.categorizedUnder);
 	});
+	eleventyConfig.addCollection("taggedPages", function (collection) {
+		return collection.getAll().filter((item) => item.data.taggedWith);
+	});
 
 	eleventyConfig.addFilter("listCategories", function(categorizedPages) {
 		// Given a collection where all items have item.data.categorizedUnder
@@ -40,6 +43,20 @@ module.exports = function (eleventyConfig) {
 		// To integrate capitals and lowercase, add (a, b) => a.localeCompare(b) within sort()
 	});
 
+	eleventyConfig.addFilter("listTags", function(taggedPages) {
+		// Given a collection where all items have item.data.taggedWith
+		// This filter will return an array of all tags.
+		// You likely want to use this filter like so: {% for item in collections.taggedPages | listTags %}
+		// That will let you iterate through each tag.
+		const allTags = [];
+		taggedPages.forEach((page) => {
+			allTags.push(...page.data.taggedWith);
+		});
+		let duplicatesRemoved = [...new Set(allTags)];
+		return duplicatesRemoved.sort();
+		// To integrate capitals and lowercase, add (a, b) => a.localeCompare(b) within sort()
+	});
+
 	eleventyConfig.addFilter("categorizedUnder", function(categorizedPages, category) {
 		// Given collections.categorizedPages & a category
 		// This filter will return an array of all pages that are categorizedUnder that category.
@@ -47,6 +64,19 @@ module.exports = function (eleventyConfig) {
 		const relevantPages = [];
 		categorizedPages.forEach((page) => {
 			if ([...page.data.categorizedUnder].includes(category)) {
+				relevantPages.push(page);
+			}
+		});
+		return relevantPages;
+	});
+
+	eleventyConfig.addFilter("taggedWith", function(taggedPages, tag) {
+		// Given collections.taggedPages & a tag
+		// This filter will return an array of all pages that are taggedWith that tag.
+		// Example usage: {% for item in collections.taggedPages | taggedWith("web design") %}
+		const relevantPages = [];
+		taggedPages.forEach((page) => {
+			if ([...page.data.taggedWith].includes(tag)) {
 				relevantPages.push(page);
 			}
 		});

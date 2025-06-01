@@ -15,6 +15,10 @@
         {
             "label": "Blog Categories",
             "url": "/blog/categories/"
+        },
+        {
+            "label": "Blog Tags",
+            "url": "/blog/tags"
         }
     ]
 }

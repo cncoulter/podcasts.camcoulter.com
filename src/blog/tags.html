@@ -1,0 +1,23 @@
+---
+layout: page.njk
+title: Blog Tags
+---
+
+{# List out all tags #}
+
+<ol>
+	{% for tag in collections.taggedPages | listTags %}
+		<li><a href="#{{ tag | slugify }}">{{ tag }}</a></li>
+	{% endfor %}
+</ol>
+
+{# For each tag, list out all relevant posts #}
+
+{% for tag in collections.taggedPages | listTags %}
+    <h2 id="{{ tag | slugify }}" tabindex="-1">{{ tag }}</h2>
+    <ol reversed>
+        {% for item in collections.taggedPages | taggedWith(tag) %}
+            <li>{% if item.data.date %}<time datetime="{{ item.data.date | machineReadable }}">{{ item.data.date | humanReadable }}</time>: {% endif %}<a href="{{ item.url }}">{{ item.data.title }}</a></li>
+	    {% endfor %}
+    </ol>
+{% endfor %}
