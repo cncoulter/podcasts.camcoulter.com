@@ -26,6 +26,20 @@ module.exports = function (eleventyConfig) {
 		return collection.getAll().filter((item) => item.data.categorizedUnder);
 	});
 
+	eleventyConfig.addFilter("listCategories", function(categorizedPages) {
+		// Given a collection where all items have item.data.categorizedUnder
+		// This filter will return an array of all categories.
+		// You likely want to use this filter like so: {% for item in collections.categorizedPages | listCategories %}
+		// That will let you iterate through each category.
+		const allCategories = [];
+		categorizedPages.forEach((page) => {
+			allCategories.push(...page.data.categorizedUnder);
+		});
+		let duplicatesRemoved = [...new Set(allCategories)];
+		return duplicatesRemoved.sort();
+		// To integrate capitals and lowercase, add (a, b) => a.localeCompare(b) within sort()
+	});
+
 	return {
 		markdownTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',
