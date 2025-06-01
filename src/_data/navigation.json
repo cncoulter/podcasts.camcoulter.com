@@ -11,6 +11,10 @@
         {
             "label": "Blog Archive",
             "url": "/blog/archive/"
+        },
+        {
+            "label": "Blog Categories",
+            "url": "/blog/categories/"
         }
     ]
 }
