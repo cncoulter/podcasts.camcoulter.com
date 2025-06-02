@@ -18,7 +18,7 @@
         },
         {
             "label": "Blog Tags",
-            "url": "/blog/tags"
+            "url": "/blog/tags/"
         }
     ]
 }
