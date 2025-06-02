@@ -9,8 +9,16 @@
             "url": "/about/"
         },
         {
-            "label": "Blog Archive",
-            "url": "/blog/archive/"
+            "label": "Blog Homepage",
+            "url": "/blog/"
+        },
+        {
+            "label": "Blog Archive (all posts, reverse chronological)",
+            "url": "/blog/archive-all-posts/"
+        },
+        {
+            "label": "Blog Archive (paginated, reverse chronological)",
+            "url": "/blog/archive-paginated"
         },
         {
             "label": "Blog Categories",

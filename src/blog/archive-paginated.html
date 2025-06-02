@@ -1,0 +1,31 @@
+---
+layout: page.njk
+title: Blog Archive (paginated, reverse chronological)
+pagination:
+    data: collections.post
+    size: 2
+    reverse: true
+---
+
+{% for post in pagination.items %}
+
+	<h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+	<p>{{ post.data.description }}</p>
+	<ul class="post-metadata">
+		{% if post.data.date %}<li>Posted on: <time datetime="{{ post.data.date | machineReadable }}">{{ post.data.date | humanReadable }}</time>.</li>{% endif %}
+		{% if post.data.date_modified %}<li>Updated on: <time datetime="{{ post.data.date_modified | machineReadable }}">{{ post.data.date_modified | humanReadable }}</time>.</li>{% endif %}
+		{% if post.data.categorizedUnder %}<li>Categorized under: {% for item in post.data.categorizedUnder | sort %}<a href="/blog/categories/#{{ item | slugify }}">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
+		{% if post.data.taggedWith %}<li>Tagged with: {% for item in post.data.taggedWith | sort %}<a href="/blog/tags/#{{ item | slugify }}">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
+	</ul>
+
+    {% if not loop.last %}<hr>{% endif %}
+
+{% endfor %}
+
+<ol>
+    <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">{% endif %}First{% if page.url != pagination.href.first %}</a>{% endif %}</li>
+    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">{% endif %}Previous{% if pagination.href.previous %}</a>{% endif %}</li>
+    {% for pageEntry in pagination.pages %}<li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>{% endfor %}
+    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">{% endif %}Next{% if pagination.href.next %}</a>{% endif %}</li>
+    <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">{% endif %}Last{% if page.url != pagination.href.last %}</a>{% endif %}</li>
+</ol>
