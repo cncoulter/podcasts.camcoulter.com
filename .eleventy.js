@@ -11,6 +11,12 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat("d LLLL y h:mm a ZZZZ");
   	});
 
+	// Date formatting (for URLs)
+	// See: https://github.com/moment/luxon/blob/master/docs/formatting.md
+  	eleventyConfig.addFilter("URLDate", dateObj => {
+    	return DateTime.fromJSDate(dateObj).toFormat("y/LL/dd");
+  	});
+
 	// Date formatting (machine readable)
 	// See: https://github.com/moment/luxon/blob/master/docs/formatting.md
   	eleventyConfig.addFilter("machineReadable", dateObj => {
