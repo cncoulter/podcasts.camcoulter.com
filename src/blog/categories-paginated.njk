@@ -1,0 +1,18 @@
+---
+layout: base.njk
+eleventyComputed:
+  title: "Categorized under {{ pagination.items[0] }}"
+pagination:
+  data: collections.categories
+  size: 1
+permalink: "/blog/categories-paginated/{{ pagination.items[0] | slugify }}/index.html"
+---
+
+{% for item in pagination.items %}
+    <h1 id="{{ item | slugify }}" tabindex="-1">Tagged with {{ item }}</h1>
+    <ol reversed>
+        {% for nestedItem in collections.categorizedPages | categorizedUnder(item) %}
+            <li>{% if nestedItem.data.date %}<time datetime="{{ nestedItem.data.date | machineReadable }}">{{ nestedItem.data.date | humanReadable }}</time>: {% endif %}<a href="{{ nestedItem.url }}">{{ nestedItem.data.title }}</a></li>
+	    {% endfor %}
+    </ol>
+{% endfor %}
