@@ -5,6 +5,7 @@ pagination:
     data: collections.post
     size: 2
     reverse: true
+permalink: "/blog/archive-paginated/{{ pagination.pageNumber + 1 }}/index.html"
 ---
 
 {% for post in pagination.items %}

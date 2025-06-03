@@ -18,11 +18,15 @@
         },
         {
             "label": "Blog Archive (paginated, reverse chronological)",
-            "url": "/blog/archive-paginated"
+            "url": "/blog/archive-paginated/1/"
         },
         {
-            "label": "Blog Categories",
-            "url": "/blog/categories/"
+            "label": "Blog Categories (Single Page)",
+            "url": "/blog/categories-single-page/"
+        },
+        {
+            "label": "Blog Categories (Paginated)",
+            "url": "/blog/categories-paginated/"
         },
         {
             "label": "Blog Tags",
