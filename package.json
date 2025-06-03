@@ -9,7 +9,7 @@
 	},
 	"keywords": [],
 	"author": "Cam Coulter",
-	"license": "ISC",
+	"license": "MIT",
 	"dependencies": {
 		"@11ty/eleventy": "^3.0.0"
 	}
