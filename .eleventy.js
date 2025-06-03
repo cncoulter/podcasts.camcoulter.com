@@ -34,6 +34,15 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("taggedPages", function (collection) {
 		return collection.getAll().filter((item) => item.data.taggedWith);
 	});
+	eleventyConfig.addCollection("categories", function (collection) {
+		const categorizedPages = collection.getAll().filter((item) => item.data.categorizedUnder);
+		const allCategories = [];
+		categorizedPages.forEach((page) => {
+			allCategories.push(...page.data.categorizedUnder);
+		});
+		let duplicatesRemoved = [...new Set(allCategories)];
+		return duplicatesRemoved.sort();
+	});
 
 	eleventyConfig.addFilter("listCategories", function(categorizedPages) {
 		// Given a collection where all items have item.data.categorizedUnder
