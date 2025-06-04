@@ -1,0 +1,12 @@
+---
+layout: page.njk
+title: People
+permalink: /people/
+eleventyExcludeFromCollections: true
+---
+
+<ul>
+{% for person in collections.people %}
+	<li><a href="{{ person.url }}">{{ person.data.title }}</a></li>
+{% endfor %}
+</ul>

@@ -13,9 +13,11 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
     * ~~Add tags (including tag index)~~
     * ~~Set up blog permalinks~~
     * ~~Paginate (optionally) blog archive~~
-    * Paginate (optionally) categories
+    * ~~Paginate (optionally) categories~~
     * Paginate (optionally) tags
-    * Add authors (including authors index and author pages)
+    * Clean up and comment your code
+    * Document how 11ty works (elsewhere)
+    * ~~Add authors (including authors index and author pages)~~
     * Add Atom feed for blog
 * Add HTML sitemap for humans
 * Add XML sitemap for robots

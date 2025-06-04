@@ -98,6 +98,27 @@ module.exports = function (eleventyConfig) {
 		return relevantPages;
 	});
 
+	eleventyConfig.addFilter("authorIs", function(collection, code_name) {
+		// Returns an array of all items that the author wrote
+		const relevantPages = [];
+		collection.forEach((page) => {
+			if (page.data.author == code_name) {
+				relevantPages.push(page);
+			}
+		});
+		return relevantPages;
+	});
+	
+	eleventyConfig.addFilter("personIs", function(people, author) {
+		const relevantPages = [];
+		people.forEach((person) => {
+			if (person.data.code_name === author) {
+				relevantPages.push(person);
+			}
+		});
+		return relevantPages;
+	});
+
 	return {
 		markdownTemplateEngine: 'njk',
 		dataTemplateEngine: 'njk',

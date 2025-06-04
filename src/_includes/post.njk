@@ -7,6 +7,7 @@ layout: base.njk
 <p>{{ description }}</p>
 
 <ul class="post-metadata">
+	{% if author %}{% for item in collections.people | personIs(author) %}<li>Author: <a href="/people/{{ item.data.title | slugify }}/">{{ item.data.title }}</a>.</li>{% endfor %}{% endif %}
 	{% if date %}<li>Posted on: <time datetime="{{ date | machineReadable }}">{{ date | humanReadable }}</time>.</li>{% endif %}
 	{% if date_modified %}<li>Updated on: <time datetime="{{ date_modified | machineReadable }}">{{ date_modified | humanReadable }}</time>.</li>{% endif %}
 	{% if categorizedUnder %}<li>Categorized under: {% for item in categorizedUnder | sort %}<a href="/blog/categories/#{{ item | slugify }}">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
@@ -15,3 +16,9 @@ layout: base.njk
 
 {{ content | safe }}
 
+{% if author %}
+{% for item in collections.people | personIs(author) %}
+<h2>About {{ item.data.title }}</h2>
+	{{ item.content | safe }}
+{% endfor %}
+{% endif %}

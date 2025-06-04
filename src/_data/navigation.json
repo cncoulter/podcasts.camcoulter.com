@@ -31,6 +31,10 @@
         {
             "label": "Blog Tags",
             "url": "/blog/tags/"
+        },
+        {
+            "label": "People",
+            "url": "/people/"
         }
     ]
 }

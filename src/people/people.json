@@ -1,0 +1,5 @@
+{
+	"layout": "person.njk",
+	"tags": "people",
+	"permalink": "/people/{{ page.fileSlug }}/"
+}
