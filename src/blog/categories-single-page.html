@@ -16,8 +16,8 @@ title: Blog Categories (Single Page)
 {% for category in collections.categories %}
     <h2 id="{{ category | slugify }}" tabindex="-1">{{ category }}</h2>
     <ol reversed>
-        {% for item in collections.categorizedPages | categorizedUnder(category) %}
-            <li>{% if item.data.date %}<time datetime="{{ item.data.date | machineReadable }}">{{ item.data.date | humanReadableDateTime }}</time>: {% endif %}<a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {% for post in collections.categorizedPages | categorizedUnder(category) %}
+            {% include "partials/post-item.html" %}
 	    {% endfor %}
     </ol>
 {% endfor %}

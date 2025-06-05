@@ -16,8 +16,8 @@ title: Blog Tags
 {% for tag in collections.tags %}
     <h2 id="{{ tag | slugify }}" tabindex="-1">{{ tag }}</h2>
     <ol reversed>
-        {% for item in collections.taggedPages | taggedWith(tag) %}
-            <li>{% if item.data.date %}<time datetime="{{ item.data.date | machineReadable }}">{{ item.data.date | humanReadableDateTime }}</time>: {% endif %}<a href="{{ item.url }}">{{ item.data.title }}</a></li>
+        {% for post in collections.taggedPages | taggedWith(tag) %}
+            {% include "partials/post-item.html" %}
 	    {% endfor %}
     </ol>
 {% endfor %}
