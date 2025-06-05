@@ -12,7 +12,7 @@ permalink: "/blog/categories-paginated/{{ pagination.items[0] | slugify }}/index
     <h1 id="{{ item | slugify }}" tabindex="-1">Tagged with {{ item }}</h1>
     <ol reversed>
         {% for nestedItem in collections.categorizedPages | categorizedUnder(item) %}
-            <li>{% if nestedItem.data.date %}<time datetime="{{ nestedItem.data.date | machineReadable }}">{{ nestedItem.data.date | humanReadable }}</time>: {% endif %}<a href="{{ nestedItem.url }}">{{ nestedItem.data.title }}</a></li>
+            <li>{% if nestedItem.data.date %}<time datetime="{{ nestedItem.data.date | machineReadable }}">{{ nestedItem.data.date | humanReadableDateTime }}</time>: {% endif %}<a href="{{ nestedItem.url }}">{{ nestedItem.data.title }}</a></li>
 	    {% endfor %}
     </ol>
 {% endfor %}

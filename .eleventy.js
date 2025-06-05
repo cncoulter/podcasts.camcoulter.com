@@ -59,14 +59,24 @@ module.exports = function (eleventyConfig) {
 	// | Filters |
 	// |---------|
 
-	// Date formatting (human readable)
+	// Create the filter: humanReadableDateTime
 	// See: https://github.com/moment/luxon/blob/master/docs/formatting.md
   	// Given an ISO 8601 datetime value,
-	// Returns a human readable datevalue value.
-	// Example Use: {{ date | humanReadable }}
+	// Returns a human readable datetime value.
+	// Example Use: {{ date | humanReadableDateTime }}
 	// Example Return: 5 June 2025 7:42 AM PDT
-	eleventyConfig.addFilter("humanReadable", dateObj => {
+	eleventyConfig.addFilter("humanReadableDateTime", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("d LLLL y h:mm a ZZZZ");
+  	});
+
+	// Create the filter: humanReadableDate
+	// See: https://github.com/moment/luxon/blob/master/docs/formatting.md
+  	// Given an ISO 8601 datetime value,
+	// Returns a human readable datetime value.
+	// Example Use: {{ date | humanReadableDate }}
+	// Example Return: June 5, 2025
+	eleventyConfig.addFilter("humanReadableDate", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL d, y");
   	});
 
 	// Date formatting (for URLs)
