@@ -7,7 +7,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * ~~Add license~~
 * ~~Make "Skip to Main Content" link visually hidden~~
 * ~~Add 404~~
-* Build out the blog
+* ~~Build out the blog~~
     * ~~Add posted dates and updated dates~~
     * ~~Add categories (including category index)~~
     * ~~Add tags (including tag index)~~
@@ -16,9 +16,10 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
     * ~~Paginate (optionally) categories~~
     * ~~Paginate (optionally) tags~~
     * ~~Clean up and comment your code~~
-    * Document how 11ty works (elsewhere)
     * ~~Add authors (including authors index and author pages)~~
-    * Add Atom feed for blog
+* Document how 11ty works (elsewhere)
+* Add Atom feed for blog
+* Add Atom feed for people
 * Add HTML sitemap for humans
 * Add XML sitemap for robots
 * Add basic CSS styles

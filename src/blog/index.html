@@ -4,7 +4,7 @@ title: Blog Homepage
 showXPosts: 2
 ---
 
-<p>Only showing the {{ showXPosts }} most recent posts.</p>
+<p>This page only shows the {{ showXPosts }} most recent posts.</p>
 
 {% for post in collections.post.reverse().slice(0, showXPosts) %}
 
@@ -13,4 +13,22 @@ showXPosts: 2
 
 {% endfor %}
 
-<p>To see all posts, view the <a href="/blog/archive-all-posts/">Blog Archive</a>.</p>
+<h2>Archive</h2>
+
+<p>To see all posts, view the a blog archive. There are multiple options:</p>
+
+<ul>
+	<li><a href="/blog/archive-single-page/">Blog Archive (Single Page)</a></li>
+	<li><a href="/blog/archive-paginated/1/">Blog Archive (Paginated)</a></li>
+</ul>
+
+<h2>Categories & Tags</h2>
+
+<p>You can also view posts by categories and tags:</p>
+
+<ul>
+	<li><a href="/blog/categories-single-page/">Blog Categories (Single Page)</a></li>
+	<li><a href="/blog/categories-paginated/">Blog Categories (Paginated)</a></li>
+	<li><a href="/blog/tags-single-page/">Blog Tags (Single Page)</a></li>
+	<li><a href="/blog/tags-paginated/">Blog Tags (Paginated)</a></li>
+</ul>

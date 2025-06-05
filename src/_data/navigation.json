@@ -9,32 +9,8 @@
             "url": "/about/"
         },
         {
-            "label": "Blog Homepage",
+            "label": "Blog",
             "url": "/blog/"
-        },
-        {
-            "label": "Blog Archive (all posts, reverse chronological)",
-            "url": "/blog/archive-all-posts/"
-        },
-        {
-            "label": "Blog Archive (paginated, reverse chronological)",
-            "url": "/blog/archive-paginated/1/"
-        },
-        {
-            "label": "Blog Categories (Single Page)",
-            "url": "/blog/categories-single-page/"
-        },
-        {
-            "label": "Blog Categories (Paginated)",
-            "url": "/blog/categories-paginated/"
-        },
-        {
-            "label": "Blog Tags (Single Page)",
-            "url": "/blog/tags-single-page/"
-        },
-        {
-            "label": "Blog Tags (Paginated)",
-            "url": "/blog/tags-paginated/"
         },
         {
             "label": "People",
