@@ -4,14 +4,14 @@
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 
-	{% include "head.njk" %}
+	{% include "partials/head.njk" %}
 
 	<body>
-		{% include "header.njk" %}
+		{% include "partials/header.njk" %}
 		<main>
 			{{ content | safe }}
 		</main>
-		{% include "footer.njk" %}
+		{% include "partials/footer.njk" %}
 	</body>
 
 </html>
