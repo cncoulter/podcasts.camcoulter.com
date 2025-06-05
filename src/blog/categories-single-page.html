@@ -6,14 +6,14 @@ title: Blog Categories (Single Page)
 {# List out all categories #}
 
 <ol>
-	{% for category in collections.categorizedPages | listCategories %}
+	{% for category in collections.categories %}
 		<li><a href="#{{ category | slugify }}">{{ category }}</a></li>
 	{% endfor %}
 </ol>
 
 {# For each category, list out all relevant posts #}
 
-{% for category in collections.categorizedPages | listCategories %}
+{% for category in collections.categories %}
     <h2 id="{{ category | slugify }}" tabindex="-1">{{ category }}</h2>
     <ol reversed>
         {% for item in collections.categorizedPages | categorizedUnder(category) %}

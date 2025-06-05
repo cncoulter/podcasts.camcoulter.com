@@ -6,7 +6,7 @@ title: Blog Categories (Paginated)
 {# List out all categories #}
 
 <ol>
-	{% for category in collections.categorizedPages | listCategories %}
+	{% for category in collections.categories %}
 		<li><a href="/blog/categories-paginated/{{ category | slugify }}/">{{ category }}</a></li>
 	{% endfor %}
 </ol>
