@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Tagged with {{ pagination.items[0] }}"
+pagination:
+  data: collections.tags
+  size: 1
+permalink: "/blog/tags-paginated/{{ pagination.items[0] | slugify }}/index.html"
+---
+
+{% for item in pagination.items %}
+    <h1 id="main-content" tabindex="-1">Tagged with {{ item }}</h1>
+    <ol reversed>
+        {% for post in collections.taggedPages | taggedWith(item) %}
+            {% include "partials/post-item.html" %}
+	    {% endfor %}
+    </ol>
+{% endfor %}

@@ -29,8 +29,12 @@
             "url": "/blog/categories-paginated/"
         },
         {
-            "label": "Blog Tags",
-            "url": "/blog/tags/"
+            "label": "Blog Tags (Single Page)",
+            "url": "/blog/tags-single-page/"
+        },
+        {
+            "label": "Blog Tags (Paginated)",
+            "url": "/blog/tags-paginated/"
         },
         {
             "label": "People",

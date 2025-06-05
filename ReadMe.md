@@ -14,7 +14,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
     * ~~Set up blog permalinks~~
     * ~~Paginate (optionally) blog archive~~
     * ~~Paginate (optionally) categories~~
-    * Paginate (optionally) tags
+    * ~~Paginate (optionally) tags~~
     * ~~Clean up and comment your code~~
     * Document how 11ty works (elsewhere)
     * ~~Add authors (including authors index and author pages)~~
