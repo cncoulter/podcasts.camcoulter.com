@@ -8,22 +8,28 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * ~~Make "Skip to Main Content" link visually hidden~~
 * ~~Add 404~~
 * ~~Build out the blog~~
-    * ~~Add posted dates and updated dates~~
-    * ~~Add categories (including category index)~~
-    * ~~Add tags (including tag index)~~
-    * ~~Set up blog permalinks~~
-    * ~~Paginate (optionally) blog archive~~
-    * ~~Paginate (optionally) categories~~
-    * ~~Paginate (optionally) tags~~
-    * ~~Clean up and comment your code~~
-    * ~~Add authors (including authors index and author pages)~~
-* Document how 11ty works (elsewhere)
+	* ~~Add posted dates and updated dates~~
+	* ~~Add categories (including category index)~~
+	* ~~Add tags (including tag index)~~
+	* ~~Set up blog permalinks~~
+	* ~~Paginate (optionally) blog archive~~
+	* ~~Paginate (optionally) categories~~
+	* ~~Paginate (optionally) tags~~
+	* ~~Clean up and comment your code~~
+	* ~~Add authors (including authors index and author pages)~~
+* Add photos (including featured images?)
+* Update page metadata
 * Add Atom feed for blog
 * Add Atom feed for people
 * Add HTML sitemap for humans
 * Add XML sitemap for robots
-* Add basic CSS styles
-* Add photos
+* Styles
+	* Headings (especially font size)
+	* Colors:
+		* Set variables for text, bg, raised-bg, link (new), link (visited), link (active)
+		* Add light mode in second
+	* Beautify "skip to main content"
+	* Print styles
 
 ## About This Site
 
