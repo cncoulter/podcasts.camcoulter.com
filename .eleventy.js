@@ -1,6 +1,38 @@
 const { DateTime } = require("luxon"); // Luxon is a JavaScript library for working with dates and times: https://moment.github.io/luxon/
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img"); // Image plugin
+const path = require("node:path"); // used for Image plugin
 
 module.exports = function (eleventyConfig) {
+
+	// |---------|
+	// | Plugins |
+	// |---------|
+
+	eleventyConfig.addPlugin(eleventyImageTransformPlugin, { // images plugin
+		// output image formats
+		formats: ["webp", "jpeg"],
+
+		// output image widths
+		widths: [300, 600, 1200, 1920, 2400],
+
+		// output image directory
+		urlPath: "/assets/images/",
+
+		// output image filename
+		filenameFormat: function (id, src, width, format, options) {
+			const extension = path.extname(src);
+			const name = path.basename(src, extension);
+			return `${name}-${width}.${format}`;
+		},
+
+		// optional, attributes assigned on <img> nodes override these values
+		htmlOptions: {
+			imgAttributes: {
+				loading: "lazy",
+			},
+			fallback: "smallest",
+		},
+	});
 
 	// |------------------------------|
 	// | Passthroughs & Watch Targets |
