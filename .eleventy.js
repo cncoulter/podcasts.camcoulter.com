@@ -40,7 +40,10 @@ module.exports = function (eleventyConfig) {
 
 	// Copy these files from src/ to public/ without modifying them.
 	eleventyConfig.addPassthroughCopy("./src/css/");
-	eleventyConfig.addPassthroughCopy("./src/*.txt")
+	eleventyConfig.addPassthroughCopy("./src/*.txt");
+	eleventyConfig.addPassthroughCopy("./src/*.png");
+	eleventyConfig.addPassthroughCopy("./src/*.ico");
+	eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
 
 	// Trigger a build when you edit these files.
 	eleventyConfig.addWatchTarget("./src/css/");

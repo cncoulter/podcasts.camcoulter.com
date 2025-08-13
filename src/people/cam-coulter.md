@@ -1,5 +1,6 @@
 ---
 title: Cam Coulter
+description: "Posts by Cam Coulter"
 code_name: cam
 ---
 

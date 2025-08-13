@@ -1,5 +1,6 @@
 ---
 title: Lorri Ipsum
+description: "Posts by Lorri Ipsum"
 code_name: lorri_ipsum
 ---
 
