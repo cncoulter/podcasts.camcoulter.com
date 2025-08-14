@@ -1,0 +1,34 @@
+---
+layout: layouts/page.njk
+title: Site Map
+---
+
+<h2>Pages</h2>
+
+<ul>
+	<li><a href="/">Home</a></li>
+	<li><a href="/about/">About</a></li>
+	<li><a href="/blog/">Blog</a>
+		<ul>
+			<li><a href="/blog/archive-single-page/">Blog Archive (Single Page)</a></li>
+			<li><a href="/blog/archive-paginated/1/">Blog Archive (Paginated)</a></li>
+			<li><a href="/blog/categories-single-page/">Blog Categories (Single Page)</a></li>
+			<li><a href="/blog/categories-paginated/">Blog Categories (Paginated)</a></li>
+			<li><a href="/blog/tags-single-page/">Blog Tags (Single Page)</a></li>
+			<li><a href="/blog/tags-paginated/">Blog Tags (Paginated)</a></li>
+		</ul>
+	</li>
+	<li><a href="/people/">People</a>
+		<ul>{% for person in collections.people %}
+			<li><a href="{{ person.url }}">{{ person.data.title }}</a></li>
+		{% endfor %}</ul>
+	</li>
+</ul>
+
+<h2>Blog Posts</h2>
+
+<ol reversed>
+{% for post in collections.post %}
+	<li><time datetime="{{ post.date | machineReadable }}">{{ post.date | humanReadableDate }}</time>: <a href="{{ post.url }}">{{ post.data.title | safe }}</a></li>
+{% endfor %}
+</ol>
