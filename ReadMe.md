@@ -22,7 +22,13 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * ~~Add HTML sitemap for humans~~
 * ~~Add XML sitemap for robots~~
 * ~~Add Atom feed for blog~~
-* Add in proper content
+* Add in proper content (and maybe pretty up the code some)
+	* Add About this Site page
+	* Add Subscribe page
+	* Fill in About page
+	* Update blog posts from lorem to legit
+		* <https://www.gutenberg.org/ebooks/2944>
+		* <https://www.gutenberg.org/ebooks/1080>
 * Styles
 	* Headings (especially font size)
 	* Colors:
