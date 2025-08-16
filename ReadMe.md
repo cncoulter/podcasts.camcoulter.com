@@ -21,7 +21,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * ~~Update page metadata~~
 * ~~Add HTML sitemap for humans~~
 * ~~Add XML sitemap for robots~~
-* Add Atom feed for blog
+* ~~Add Atom feed for blog~~
 * Add in proper content
 * Styles
 	* Headings (especially font size)

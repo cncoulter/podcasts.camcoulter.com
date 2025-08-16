@@ -3,6 +3,7 @@
 	"siteName": "Dozen",
 	"siteDescription": "A simple starter website for the 11ty static site generator. Hopefully this gets used to spin off at least a dozen websites.",
 	"author": "Cam Coulter",
+	"rights": "&copy; Cam Coulter 2025",
 	"defaultImage": {
 		"url": "/assets/images/pexels-roman-odintsov-5847181-300.jpeg",
 		"alt": "A tray with a dozen raw muffins before baking."

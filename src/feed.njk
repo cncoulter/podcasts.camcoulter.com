@@ -1,0 +1,34 @@
+---
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with help from https://validator.w3.org/feed/docs/atom.html -->
+<feed xmlns="http://www.w3.org/2005/Atom">
+<id>{{ meta.url }}/</id>
+<link rel="self" type="application/atom+xml" href="{{ meta.url }}/feed.xml" />
+<link rel="alternate" type="text/html" href="{{ meta.url }}" />
+<title type="text" xml:lang="en">{{ meta.siteName }}</title>
+<subtitle>{{ meta.siteDescription }}</subtitle>
+<author>
+	<name>{{ meta.author }}</name>
+</author>
+<rights type="html">{{ meta.rights | escape }}</rights>
+{% set mostRecentPost = collections.post | reverse | first %}<updated>{{ mostRecentPost.date | machineReadable }}</updated>
+<icon>{{ meta.url }}/favicon-32x32.png</icon>
+<generator>{{ eleventy.generator }}</generator>
+
+{% for post in collections.post | reverse %}
+<entry>
+	<id>{{ meta.url}}{{ post.url }}</id>
+	<link rel="alternate" type="text/html" href="{{ meta.url}}{{ post.url }}"/>
+	<title type="html">{{ post.data.title | escape }}</title>
+	<summary type="html">{{ post.data.description | escape }}</summary>
+	<published>{{ post.data.date | machineReadable }}</published>
+	<updated>{% if post.data.date_modified %}{{ post.data.date_modified | machineReadable }}{% else %}{{ post.data.date | machineReadable }}{% endif %}</updated>
+	<author>
+		<name>{{ meta.author }}</name>
+	</author>
+	<content type="html">{{ post.content | escape }}</content>
+</entry>
+{% endfor %}
+</feed>
