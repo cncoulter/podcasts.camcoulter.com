@@ -25,11 +25,12 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * Add in proper content (and maybe pretty up the code some)
 	* ~~Add About this Site page~~
 	* ~~Add Subscribe page~~
-	* Fill in About page
+	* ~~Fill in About page~~
 	* Update blog posts from lorem to legit
 		* <https://www.gutenberg.org/ebooks/2944>
 		* <https://www.gutenberg.org/ebooks/1080>
 * Styles
+	* Incorporate a [classless CSS stylesheet](https://github.com/dbohdan/classless-css) (and note that on the About and About This Site pages)
 	* Headings (especially font size)
 	* Colors:
 		* Set variables for text, bg, raised-bg, link (new), link (visited), link (active)

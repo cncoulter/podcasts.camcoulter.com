@@ -53,13 +53,13 @@ module.exports = function (eleventyConfig) {
 	// |-------------|
 
 	// Create the collection: categorizedPages
-	// which includes every page that has categorizedUnder in its frontmatter.
+	// which includes every page that has categorizedUnder in its front matter.
 	eleventyConfig.addCollection("categorizedPages", function (collection) {
 		return collection.getAll().filter((item) => item.data.categorizedUnder);
 	});
 
 	// Create the collection: taggedPages
-	// which includes every page that has taggedWith in its frontmatter.
+	// which includes every page that has taggedWith in its front matter.
 	eleventyConfig.addCollection("taggedPages", function (collection) {
 		return collection.getAll().filter((item) => item.data.taggedWith);
 	});
