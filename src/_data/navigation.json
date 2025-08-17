@@ -16,5 +16,19 @@
             "label": "People",
             "url": "/people/"
         }
+    ],
+    "footerLinks": [
+        {
+            "label": "About This Site",
+            "url": "/about-this-site/"
+        },
+        {
+            "label": "Site Map",
+            "url": "/sitemap/"
+        },
+        {
+            "label": "Subscribe",
+            "url": "/subscribe/"
+        }
     ]
 }
