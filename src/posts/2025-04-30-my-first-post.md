@@ -1,17 +1,13 @@
 ---
 title: My first post
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-date: 2025-04-30T07:42:00-07:00 # PST is -08:00, PDT is -07:00
+description: This is a lorem ipsum post.
+date: 2025-01-01T07:00:00-07:00 # PST is -08:00, PDT is -07:00
 date_modified: 2025-05-23T01:01:00-07:00 # PST is -08:00, PDT is -07:00
 author: lorri_ipsum
 categorizedUnder:
-- web design
-- accessibility
-- reading
+- lorem ipsum
 taggedWith:
-- unicorn
-- frog
-- calico cat
+- lorem ipsum
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ante nulla, finibus in sodales ut, dignissim in orci. Nullam non massa sed purus aliquet pretium. Quisque rutrum vitae risus eu lobortis. Vestibulum semper dapibus justo. Maecenas lacus nulla, iaculis a mi auctor, viverra suscipit sem. Aenean lacus lectus, fermentum at varius vitae, volutpat nec arcu. Duis luctus euismod lorem nec sagittis. Donec vitae sagittis ante, pellentesque rutrum massa. Donec ornare, lectus id cursus aliquam, nisi urna fringilla elit, eu varius ipsum neque eget lacus. In rhoncus felis risus. Morbi sed libero nunc. Nullam vulputate tortor ultrices nulla lacinia bibendum. Morbi non ipsum eu massa facilisis mattis. Mauris nisl erat, dapibus et pulvinar ac, gravida quis purus. Proin consectetur porttitor odio, vel convallis nibh malesuada nec.
