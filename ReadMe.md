@@ -27,7 +27,7 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 	* ~~Add Subscribe page~~
 	* ~~Fill in About page~~
 * ~~Update styles~~
-* Add blog post
+* ~~Add blog post, update your personal bio~~
 
 
 ## About This Site
@@ -37,7 +37,6 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * Powered by [Eleventy](https://www.11ty.dev/)
 * Hosted with [Netlify](https://www.netlify.com/)
 * Released under the [MIT License](https://choosealicense.com/licenses/mit/)
-* In development and incomplete
 
 ## To do (for future versions)
 
@@ -45,4 +44,3 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * Update blog posts from lorem to legit
 * Add featured images for pages/posts
 * Add JSON-LD metadata
-* Add alternate stylesheets?
