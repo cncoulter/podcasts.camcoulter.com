@@ -22,21 +22,12 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 * ~~Add HTML sitemap for humans~~
 * ~~Add XML sitemap for robots~~
 * ~~Add Atom feed for blog~~
-* Add in proper content (and maybe pretty up the code some)
+* ~~Add in proper content (and maybe pretty up the code some)~~
 	* ~~Add About this Site page~~
 	* ~~Add Subscribe page~~
 	* ~~Fill in About page~~
-	* Update blog posts from lorem to legit
-		* <https://www.gutenberg.org/ebooks/2944>
-		* <https://www.gutenberg.org/ebooks/1080>
-* Styles
-	* Incorporate a [classless CSS stylesheet](https://github.com/dbohdan/classless-css) (and note that on the About and About This Site pages)
-	* Headings (especially font size)
-	* Colors:
-		* Set variables for text, bg, raised-bg, link (new), link (visited), link (active)
-		* Add light mode in second
-	* Beautify "skip to main content"
-	* Print styles
+* ~~Update styles~~
+* Add blog post
 
 
 ## About This Site
@@ -50,6 +41,8 @@ Dozen is a simple starter website for the [Eleventy](https://www.11ty.dev/) stat
 
 ## To do (for future versions)
 
-* Add featured images for pages/posts
 * Add Atom feed for individual people/contributors
+* Update blog posts from lorem to legit
+* Add featured images for pages/posts
 * Add JSON-LD metadata
+* Add alternate stylesheets?

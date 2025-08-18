@@ -5,7 +5,8 @@ title: Subscribe
 
 To follow this site, copy the link below and add it to your feed reader.
 
-[Atom feed for this site](/feed.xml)
+<p style="text-align: center;"><a href="/feed.xml">Atom feed for this site</a></p>
+
 
 ## What are web feeds?
 

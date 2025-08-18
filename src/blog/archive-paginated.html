@@ -15,7 +15,7 @@ permalink: "/blog/archive-paginated/{{ pagination.pageNumber + 1 }}/index.html"
 
 {% endfor %}
 
-<ol>
+<ol class="paginated">
     <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">{% endif %}First{% if page.url != pagination.href.first %}</a>{% endif %}</li>
     <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">{% endif %}Previous{% if pagination.href.previous %}</a>{% endif %}</li>
     {% for pageEntry in pagination.pages %}<li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>{% endfor %}
