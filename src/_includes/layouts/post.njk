@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 <h1 id="main-content" tabindex="-1">{{ title | safe }}</h1>
 
-<p>{{ description | safe }}</p>
+<p class="lead">{{ description | safe }}</p>
 
 <ul class="post-metadata">
 	{% if author %}{% for item in collections.people | personIs(author) %}<li>Author: <a href="/people/{{ item.data.title | slugify }}/">{{ item.data.title }}</a>.</li>{% endfor %}{% endif %}

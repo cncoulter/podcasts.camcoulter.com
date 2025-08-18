@@ -290,6 +290,15 @@ a[href="#main-content"]:focus {
 }
 
 /*
+	## Posts
+	--------
+*/
+
+.lead {
+	font-size: var(--step-1);
+}
+
+/*
 	# Page-Specific Styles
 	======================
 */
