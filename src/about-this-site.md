@@ -23,15 +23,15 @@ This statement was last updated on August 15, 2025.
 
 I use the static site generator [Eleventy](https://www.11ty.dev/) (11ty) to knit this site together. (That's kind of the whole point of this site, isn't it?)
 
-This site is hosted with [Netlify](https://www.netlify.com/).
-
 [This website's codebase](https://github.com/cncoulter/dozen) is hosted on GitHub.
+
+This site is hosted with [Netlify](https://www.netlify.com/).
 
 ## Copyright
 
 This website (code and content) is created by and copyright Cam Coulter, unless where otherwise noted.
 
-The code for this website is licensed under the [MIT License](https://choosealicense.com/licenses/mit/), unless otherwise noted. The MIT License is a free/libre, open-source copyleft license. By all means, fork this project to set up your own website!
+The code for this website is licensed under the [MIT License](https://choosealicense.com/licenses/mit/), unless otherwise noted. The MIT License is a permissive, open-source license. By all means, fork this project to set up your own website!
 
 This website’s favicon is the [cupcake emoji](https://favicon.io/emoji-favicons/cupcake) from the open-source project Twemoji. The graphic is copyright 2020 Twitter, Inc and other contributors, and it’s licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license. Thanks to [favicon.io](https://favicon.io/) for making it easy.
 

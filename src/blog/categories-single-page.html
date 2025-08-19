@@ -16,7 +16,7 @@ title: Blog Categories (Single Page)
 {% for category in collections.categories %}
     <h2 id="{{ category | slugify }}" tabindex="-1">{{ category }}</h2>
     <ol reversed>
-        {% for post in collections.categorizedPages | categorizedUnder(category) %}
+        {% for post in collections.categorizedPages | categorizedUnder(category) | reverse %}
             {% include "partials/post-item.html" %}
 	    {% endfor %}
     </ol>

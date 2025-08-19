@@ -22,4 +22,4 @@ Some of the features on this site are not common on other Eleventy sites I've re
 
 Please refer to the [About page](/about/) for more details on how I've structured Dozen and how you can make use of it.
 
-I'd love to know if you find this project helpful or if there's anything confusing about this project that I can help clarify. And if I make any websites forked from Dozen, please to share them with me! I have the modest ambition that Dozen can be used as the base for at least a dozen websites, and I'd love to see that come true!
+I'd love to know if you find this project helpful or if there's anything confusing about this project that I can help clarify. And if you make any websites forked from Dozen, please share them with me! I have the modest ambition that Dozen can be used as the base for at least a dozen websites, and I'd love to see that come true!

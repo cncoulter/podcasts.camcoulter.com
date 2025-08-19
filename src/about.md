@@ -12,7 +12,7 @@ The most complicated part of Dozen is the blog, but it should be simple enough t
 * The blog homepage only shows the 2 most recent posts.
 * There are two different versions of the blog archive: a paginated one and a single-page version.
 * The blog has support for both tags and categories. Again, each of these are set up with both a paginated index as well as a single-page one.
-* The blog also supports supports designating individual authors for different posts. Each author has their own page that lists their bio and posts they've written.
+* The blog also supports designating individual authors for different posts. Each author has their own page that lists their bio and posts they've written.
 
 ## How it's structured
 
@@ -21,7 +21,7 @@ The config file is `.eleventy.js`. I've commented it up so it should be reasonab
 * To categorize a post under a particular category, add "categorizedUnder" to the post's front matter.
 * To tag a post with a particular tag, add "taggedWith" to the post's front matter.
 * The config file sets up the following collections:
-	* categorizedPages: every page that has categorizedUnder in its frontmatter.
+	* categorizedPages: every page that has categorizedUnder in its front matter.
 	* taggedPages: every page that has taggedWith in its front matter.
 	* categories: an array of every category.
 	* tags: an array of every tag.
@@ -48,15 +48,15 @@ Here are some other notes about how Dozen is structured:
 * Blog posts are kept in the `src/posts` folder.
 * Author bios and information are kept in the `src/people` folder.
 
-Dozen includes an Atom feed for the blog, a human readable site map, and an XML sitemap. The Atom feed and XML sitemap are templated using Nunjucks and you can adjust those to your liking.
+Dozen includes an Atom feed for the blog, a human readable site map, and an XML site map. The Atom feed and XML site map are templated using Nunjucks and you can adjust those to your liking.
 
 ## How to spin off another site
 
 [Fork Dozen on GitHub](https://github.com/cncoulter/dozen) and get hacking! You will probably want to start by:
 
-1. Updating `ReadMe.md`, `package.json`, `LICENSE.txt`, and `src/_data/meta.json`.
+1. Updating `ReadMe.md`, `package.json`, and `src/_data/meta.json`.
 2. Reviewing and possibly editing `.eleventy.js`.
 3. Updating `src/index.html`, `src/about.md`, `src/posts`, `src/people/`, and `src/about-this-site.md` with your content.
 4. Updating your favicon (see `src/_includes/partials/head.njk`).
 
-If you use Dozen to spin off another site or just find Dozen helpful as a receipe for how to do things in Eleventy, please let me know!
+If you use Dozen to spin off another site or just find Dozen helpful as a recipe for how to do things in Eleventy, please let me know!
