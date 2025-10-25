@@ -1,0 +1,11 @@
+---
+layout: layouts/base.njk
+---
+
+<h1 id="main-content" tabindex="-1">{{ title | safe }}</h1>
+
+<p>🗓️ Posted on: <time datetime="{{ date | machineReadable }}">{{ date | humanReadableDate }}</time>.</p>
+
+<p><audio controls src="{{ source }}"></audio></p>
+
+{{ content | safe }}

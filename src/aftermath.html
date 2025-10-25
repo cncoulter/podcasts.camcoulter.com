@@ -3,14 +3,14 @@ layout: layouts/page.njk
 title: Aftermath
 ---
 
+<p>The Resurgence: The Aftermath: The Recap: The Podcast. Here's what you missed.</p>
+
+<p>View the <a href="/feeds/aftermath.rss">RSS Feed</a>.</p>
+
 <figure>
 	<img src="/assets/images/circumstantials.jpg" alt="A fabric banner depicting a crossed sword and lute, surrounded by three bees. Below, embroidery reads The Circumstantials, Est. '22." style="margin: auto; width: 50%;">
 </figure>
 
-View the <a href="/feeds/aftermath.rss">RSS Feed</a>.
-
-{% for post in collections.aftermath | reverse %}
-
-	<h2><a href="{{ post.url }}"">{{ post.data.title | safe }}</a></h2>
-
-{% endfor %}
+<ol style="list-style-type: none;">{% for post in collections.aftermath %}
+	<li><a href="{{ post.url }}"">{{ post.data.title | safe }}</a></li>
+{% endfor %}</ol>
