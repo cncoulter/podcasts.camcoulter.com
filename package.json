@@ -1,7 +1,7 @@
 {
-	"name": "Dozen",
+	"name": "Podcasts",
 	"version": "1.0.0",
-	"description": "A simple starter website for the 11ty static site generator.",
+	"description": "These are my podcasts.",
 	"main": "index.html",
 	"scripts": {
 		"start": "eleventy --serve",

@@ -3,9 +3,5 @@
 <p>{{ post.data.description | safe }}</p>
 
 <ul class="post-metadata">
-	{% if post.data.author %}{% for item in collections.people | personIs(post.data.author) %}<li>Author: <a href="/people/{{ item.data.title | slugify }}/">{{ item.data.title }}</a>.</li>{% endfor %}{% endif %}
 	{% if post.date %}<li>Posted on: <time datetime="{{ post.date | machineReadable }}">{{ post.date | humanReadableDateTime }}</time>.</li>{% endif %}
-	{% if post.data.date_modified %}<li>Updated on: <time datetime="{{ post.data.date_modified | machineReadable }}">{{ post.data.date_modified | humanReadableDateTime }}</time>.</li>{% endif %}
-	{% if post.data.categorizedUnder %}<li>Categorized under: {% for item in post.data.categorizedUnder | sort %}<a href="/blog/categories-paginated/{{ item | slugify }}/">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
-	{% if post.data.taggedWith %}<li>Tagged with: {% for item in post.data.taggedWith | sort %}<a href="/blog/tags-paginated/{{ item | slugify }}/">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
 </ul>

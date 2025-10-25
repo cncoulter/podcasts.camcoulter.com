@@ -1,11 +1,11 @@
 {
-	"url": "https://dozen.camcoulter.com",
-	"siteName": "Dozen",
-	"siteDescription": "A simple starter website for the 11ty static site generator. Hopefully this gets used to spin off at least a dozen websites.",
+	"url": "https://podcasts.camcoulter.com",
+	"siteName": "My Podcasts",
+	"siteDescription": "Here you can find my podcasts.",
 	"author": "Cam Coulter",
 	"rights": "&copy; Cam Coulter 2025",
 	"defaultImage": {
-		"url": "/assets/images/pexels-roman-odintsov-5847181-300.jpeg",
-		"alt": "A tray with a dozen raw muffins before baking."
+		"url": "/assets/images/c-d-x-PDX_a_82obo-unsplash-300.jpeg",
+		"alt": "Black over-ear headphones resting on bright yellow surface."
 	}
 }

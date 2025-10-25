@@ -5,16 +5,8 @@
             "url": "/"
         },
         {
-            "label": "About",
-            "url": "/about/"
-        },
-        {
-            "label": "Blog",
-            "url": "/blog/"
-        },
-        {
-            "label": "People",
-            "url": "/people/"
+            "label": "Aftermath",
+            "url": "/aftermath/"
         }
     ],
     "footerLinks": [
@@ -25,10 +17,6 @@
         {
             "label": "Site Map",
             "url": "/sitemap/"
-        },
-        {
-            "label": "Subscribe",
-            "url": "/subscribe/"
         }
     ]
 }

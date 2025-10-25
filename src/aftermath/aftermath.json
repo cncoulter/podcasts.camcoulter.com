@@ -1,0 +1,5 @@
+{
+	"layout": "layouts/post.njk",
+	"tags": "aftermath",
+	"permalink": "/aftermath/{{ date | URLDate }}/{{ page.fileSlug }}/"
+}

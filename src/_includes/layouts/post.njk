@@ -9,9 +9,6 @@ layout: layouts/base.njk
 <ul class="post-metadata">
 	{% if author %}{% for item in collections.people | personIs(author) %}<li>Author: <a href="/people/{{ item.data.title | slugify }}/">{{ item.data.title }}</a>.</li>{% endfor %}{% endif %}
 	{% if date %}<li>Posted on: <time datetime="{{ date | machineReadable }}">{{ date | humanReadableDateTime }}</time>.</li>{% endif %}
-	{% if date_modified %}<li>Updated on: <time datetime="{{ date_modified | machineReadable }}">{{ date_modified | humanReadableDateTime }}</time>.</li>{% endif %}
-	{% if categorizedUnder %}<li>Categorized under: {% for item in categorizedUnder | sort %}<a href="/blog/categories-paginated/{{ item | slugify }}/">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
-	{% if taggedWith %}<li>Tagged with: {% for item in taggedWith | sort %}<a href="/blog/tags-paginated/{{ item | slugify }}/">{{ item }}</a>{% if not loop.last %}, {% endif %}{% endfor %}.</li>{% endif %}
 </ul>
 
 {{ content | safe }}
