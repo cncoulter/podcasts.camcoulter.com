@@ -25,13 +25,17 @@ This site was forked from [Dozen](https://dozen.camcoulter.com/).
 
 I use the static site generator [Eleventy](https://www.11ty.dev/) (11ty) to knit this site together.
 
-This website's codebase is hosted on GitHub.
+[This website's codebase](https://github.com/cncoulter/podcasts.camcoulter.com) is hosted on GitHub.
 
 This site is hosted with [Netlify](https://www.netlify.com/).
 
 ## Copyright
 
-This website (code and content) is created by and copyright Cam Coulter, unless where otherwise noted.
+Unless where otherwise noted:
+
+* The website code is created by and copyright Cam Coulter.
+* The podcast scripts/transcripts are created by and copyright Cam Coulter and their adventuring party mates.
+* The podcast recordings are created by and copyright Cam Coulter.
 
 The code for this website is licensed under the [MIT License](https://choosealicense.com/licenses/mit/), unless otherwise noted. The MIT License is a permissive, open-source license. By all means, fork this project to set up your own website!
 

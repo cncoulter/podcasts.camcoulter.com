@@ -2,5 +2,4 @@
 	<ul>{% for link in navigation.footerLinks %}
 		<li><a href="{{ link.url }}" {% if link.url === page.url %}aria-current="page"{% endif %}>{{ link.label }}</a></li>
 	{% endfor %}</ul>
-	<p>{{ meta.rights | safe }}</p>
 </footer>
