@@ -25,7 +25,7 @@ Our heroes visited a bar that Niles frequented. They learned that last night he 
 
 Without a clear lead, the party split up. Levity and Sadao had brunch plans with Whittaker Barrabai. Sadao left brunch with a mission and a potential adventuring party of their own, and Levity reconnected with a holyphant they had met in Barrabai’s garden once before.
 
-Nadya and Ravina looked for Y’ron. They found his gang, and the gang tried to shoo Nadya away. In response, Nadyat threatened to burn down their building in a bid to speak with Y’ron, but Nadya realized that he actually wasn’t there, so she turned around and left.
+Nadya and Ravina looked for Y’ron. They found his gang, and the gang tried to shoo Nadya away. In response, Nadya threatened to burn down their building in a bid to speak with Y’ron, but Nadya realized that he actually wasn’t there, so she turned around and left.
 
 Russ trekked through the sewers and tracked down and knocked out Niles, who seemed to be in the process of transforming into some kind of monster. Russ brought Niles to the Sorcerer’s Circle hoping they could heal him.
 
